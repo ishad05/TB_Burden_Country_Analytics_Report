@@ -25,8 +25,8 @@ This repository contains a python script to clean and preprocess the Tuberculosi
 
 **Clone the repository**
 ```
-git clone https://github.com/your-username/tb_burden_cleaning.git
-cd tb_burden_cleaning
+git clone github.com/ishad05/TB_Burden_Country_Analytics_Report
+cd TB_Burden_Country_Analytics_Report
 ```
 
 **Install dependencies**
