@@ -58,7 +58,7 @@ fig, axes = plt.subplots(
     figsize=(10, 14)        # fits most screens
 )
 
-# 1️⃣ Histogram
+# 1️ Histogram
 axes[0].hist(
     df['estimated_incidence_all_forms_per_100_000_population'].dropna()
 )
@@ -66,7 +66,7 @@ axes[0].set_title("Distribution of TB Incidence")
 axes[0].set_xlabel("Incidence per 100,000")
 axes[0].set_ylabel("Frequency")
 
-# 2️⃣ India trend
+# 2️ India trend
 sns.lineplot(
     data=india_data,
     x='year',
@@ -77,7 +77,7 @@ axes[1].set_title("TB Incidence Trend in India")
 axes[1].set_xlabel("Year")
 axes[1].set_ylabel("Incidence per 100,000")
 
-# 3️⃣ Region comparison
+# 3️ Region comparison
 region_avg = df.groupby('region')[
     'estimated_incidence_all_forms_per_100_000_population'
 ].mean().reset_index()
